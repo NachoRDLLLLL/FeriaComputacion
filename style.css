@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    margin-top: 0;
+    box-sizing: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: black;
+    background-size: 500%;
+}
+
+.Links{
+    height: 5vh; 
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+
+nav .Links{
+    width: 25%;
+    height: 100%;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+nav .home{
+    color: #fff;
+    transition: transform 0.2s;
+    flex-wrap: wrap;
+}
+
+nav .home:hover{
+    transform: scale(1.2);
+}
+
+nav .contacto{
+    color: #fff;
+    transition: transform 0.2s;
+    flex-wrap: wrap;
+}
+
+nav .contacto:hover{
+    transform: scale(1.2);
+}
+
+nav .redes{
+    color: #fff;
+    transition: transform 0.2s;
+    flex-wrap: wrap;
+}
+
+nav .redes:hover{
+    transform: scale(1.2);
+}
+
+.Titulo{
+    color: white; 
+    text-align: center;
+    margin: 300px 0;
+    font-size: 28px;
+    flex-wrap: wrap;
+}
+
+
+.creador{
+    font-size: 2vh;
+    flex-wrap: wrap;
+}
+
+.descripcion{
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 300px;
+    margin-left: 250px;
+    margin-top: -150px;
+    color: white;
+    font-family:monospace;
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.codigo_ejemplo{ 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 80px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    }
+     
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+    }
+
+.codigo_ejemplo{
+    height: 250px;
+    margin-top: -60px;
+    flex-wrap: wrap;
+}
+
+.button{            
+    padding: 10px 20px;       
+    border: none;             
+    border-radius: 5px;       
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;      
+    height: 40px; 
+    flex-wrap: wrap;
+}
+
+.btn_neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    flex-wrap: wrap;
+}
+
+.btn_neon:hover{
+    background:#a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px
+    #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;  
+}
+
+.btn_neon span{
+    position: absolute;
+    display: block;
+    flex-wrap: wrap;
+}
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#a945c7);
+    flex-wrap: wrap;
+}
+
+.btn_neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#a945c7);
+    flex-wrap: wrap;
+}
+
+.btn_neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2{
+    top: -100%;
+    left: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+    flex-wrap: wrap;
+}
+
+.btn_neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+    flex-wrap: wrap;
+}
+
+.btn_neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.btn_neon{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-wrap: wrap;
+}
+
+.objeto_flotante { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    }
+     
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+    }
+
+.objeto_flotante{
+    height: 250px;
+    margin-top: -60px;
+    flex-wrap: wrap;
+}
+
+
+
