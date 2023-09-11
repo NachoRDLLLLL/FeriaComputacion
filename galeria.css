@@ -1,0 +1,115 @@
+body{
+    background-color: black;
+    margin-top: 30vh;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para los menús desplegables */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar ul li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilos de las filas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilos de las imágenes */
+.image {
+    position: relative;
+    overflow: hidden;
+    width: calc(33.33% - 20px); /* Asegura que haya 3 imágenes por fila */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+/* Efecto hover en las imágenes */
+.image:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+}
+
+/* Estilos del overlay (descripción) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s;
+}
+
+.image:hover .overlay {
+    opacity: 1; /* Mostrar el overlay al hacer hover */
+}
+
+.overlay p {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
